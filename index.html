@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Profesional | Alfin Shofiul Umam</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: #f4f7f6; color: #333; }
+        
+        /* [GARIS HORIZONTAL ATAS HURUF F] - Identitas Utama */
+        header { background: #2c3150; color: white; padding: 40px 20px; text-align: center; border-bottom: 4px solid #2c3150; }
+        header h1 { margin: 0; font-size: 32px; letter-spacing: 1px; }
+        header p { margin: 5px 0 0 0; color: #ffffff; font-size: 16px; }
+        
+        .foto-profil {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top;
+            border: 4px solid #1abc9c;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .btn-download {
+            display: inline-block; 
+            background: #1abc9c; 
+            color: white; 
+            text-decoration: none; 
+            padding: 10px 22px; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            font-size: 14px;
+            margin-top: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .btn-download:hover { background: #16a085; }
+
+        .container { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
+        .card { background: white; padding: 25px; margin-bottom: 25px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        
+        h2 { color: #2c3e50; border-left: 4px solid #1abc9c; padding-left: 10px; margin-top: 0; margin-bottom: 15px; font-size: 20px; }
+        h3 { margin: 5px 0; color: #34495e; font-size: 18px; }
+        .meta { color: #7f8c8d; font-size: 13px; font-style: italic; margin-bottom: 10px; }
+        
+        /* ── STRUKTUR UTAMA HURUF F (SISTEM DUA KOLOM) ── */
+        .f-layout {
+            display: grid;
+            grid-template-columns: 65% 32%; /* Kolom kiri lebih lebar (batang F), kolom kanan untuk info cepat */
+            gap: 3%;
+        }
+
+        /* Kolom Kiri: Fokus membaca teks panjang */
+        .main-column { display: flex; flex-direction: column; }
+        
+        /* Kolom Kanan: Fokus pemindaian cepat mata */
+        .side-column { display: flex; flex-direction: column; }
+
+        ul { padding-left: 20px; margin-top: 5px; }
+        li { margin-bottom: 8px; text-align: justify; font-size: 14px; }
+        
+        /* Container pembungkus bagian keahlian */
+        .skills-section { 
+            margin-bottom: 25px; 
+        }
+
+        .skills-section h3 { 
+            font-size: 15px; 
+            border-bottom: 1px solid #eee; 
+            padding-bottom: 5px; 
+            margin-bottom: 12px; 
+            color: #2c3e50;
+        }
+
+        /* Mengatur wadah badge agar mengunci maksimal 2 item per baris */
+        .skills-section div {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Mengunci mutlak menjadi 2 kolom sama rata (kiri & kanan) */
+            gap: 8px; /* Jarak konsisten antar kotak badge */
+            margin-bottom: 10px;
+        }
+
+        /* Gaya kotak Badge yang disesuaikan agar teks berada di tengah (Center) */
+        .badge { 
+            background: #e8f8f5; 
+            color: #16a085; 
+            padding: 8px 6px; /* Padding vertikal sedikit tebal agar proporsional */
+            border-radius: 4px; 
+            font-size: 11px; /* Ukuran font sedikit disesuaikan agar teks panjang tidak tumpah */
+            font-weight: bold; 
+            border: 1px solid #d1f2eb;
+            text-align: center; /* Membuat teks di dalam kotak rata tengah */
+            display: block; /* Memaksa kotak memenuhi 1 slot grid */
+            transition: all 0.2s ease;
+        }
+
+        /* Efek interaktif saat kursor HRD menyentuh badge */
+        .badge:hover {
+            background: #1abc9c;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Timeline Jurnal */
+        .log-kegiatan { border-left: 3px solid #1abc9c; padding-left: 15px; }
+        .kegiatan-item { margin-bottom: 15px; background: #fafafa; padding: 12px; border-radius: 4px; border-bottom: 1px solid #eee; }
+
+        /* Responsive untuk HP (Otomatis jadi 1 kolom kalau layar kecil) */
+        @media (max-width: 768px) {
+            .f-layout { grid-template-columns: 1fr; gap: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="1751287559993.jpg" alt="Foto Alfin Shofiul Umam" class="foto-profil"><br>
+    <h1 ><strong>ALFIN SHOFIUL UMAM</strong></h1>
+    <p><strong>Kepanjen, Kab. Malang, Jawa Timur | 0858-0404-7732 | alfinshofiul19@gmail.com</strong></p>
+    <a href="CV_ALFIN_SHOFIUL_UMAM.pdf" download="CV_ALFIN_SHOFIUL_UMAM.pdf" class="btn-download">
+        📥 Unduh Berkas CV (Format PDF)
+    </a>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Ringkasan Profesional</h2>
+        <p style="margin: 0; text-align: justify; font-size: 15px; line-height: 1.7;">
+            Lulusan SMK Rekayasa Perangkat Lunak dengan pengalaman kerja selama 1 tahun 2 bulan sebagai <strong>Pramuniaga dan Admin Operasional</strong>  di industri retail. Berpengalaman dalam <strong>pengelolaan stok barang</strong>, <strong>stock opname</strong>, <strong>rekapitulasi data penjualan</strong>, <strong>rekonsiliasi transaksi tunai dan non-tunai</strong>, <strong>serta administrasi dokumen</strong>. Berdasarkan tes kepribadian, saya memiliki  <strong>profil ISTJ dengan gaya (Investigator) yang berfokus pada fakta, logis, dan terorganisir</strong> serta skor minat tertinggi pada <strong>bidang Perhitungan, Administratif, dan Pelayanan Sosial.</strong> Karakteristik ini membuat saya terbiasa bekerja secara <strong>metodis, teliti, disiplin, dan penuh tanggung jawab</strong> dalam mendukung efisiensi operasional harian perusahaan.
+        </p>
+    </div>
+
+    <div class="f-layout">
+        
+        <!-- ==================== KOLOM KIRI ==================== -->
+        <div class="main-column">
+            
+            <div class="card">
+                <h2>Pengalaman Kerja</h2>
+                <h3>Pramuniaga & Admin Operasional</h3>
+                <div class="meta">Putra Mobile Phone (SG Smartphone) | Okt 2023 - Des 2024</div>
+                <ul>
+                    <li>Mengelola <strong>Inventory Control</strong> dan melaksanakan <strong>Stock Opname</strong> berkala untuk ratusan jenis stok produk guna memastikan kesesuaian data fisik dan sistem.</li>
+                    <li><strong>Melayani</strong> 30-50 pelanggan per hari dengan ramah, memberikan konsultasi produk, memproses transaksi, dan menangani komplain untuk memastikan kepuasaan pelanggan.</li>
+                    <li><strong>Melakukan transaksi keuangan harian (Tunai, EDC, QRIS, Pulsa, dan Paket Data)</strong> secara presisi menggunakan laporan sistem <strong>POS Vanda Soft</strong>.</li>
+                    <li><strong>Merekap dan mencatat data penjualan harian secara terstruktur</strong> untuk kebutuhan monitoring operasional toko.</li>
+                    <li><strong>Mengelola administrasi dan pengarsipan dokumen klaim servis pelanggan</strong> sesuai prosedur yang berlaku</li>
+                    <li><strong>Membuat materi promosi sederhana menggunakan Canva</strong> untuk kebutuhan media sosial dan promosi toko. </li>
+                    <li><strong>Menjaga kerapian area penjualan dan memastikan produk</strong> tertata dengan baik.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Aktivitas & Jurnal Produktivitas</h2>
+                <div class="log-kegiatan">
+                    <div class="kegiatan-item">
+                        <div style="font-size: 12px; color: #7f8c8d;"><strong>📅 19-06-2026</strong></div>
+                        <h4 style="margin: 3px 0; color: #2c3e50;">Penyusunan Database Portofolio & Desain Kearsipan Web</h4>
+                        <p style="margin: 5px 0 0 0; font-size: 13px; color: #555; text-align: justify;">Merancang arsitektur basis data portofolio serta mengoptimalkan tata letak elemen halaman web menggunakan aturan CSS Grid dua kolom untuk efisiensi pemindaian mata pengguna.</p>
+                        <p style="margin: 5px 0 0 0; font-size: 13px; color: #555; text-align: justify;">Catatan: Selama periode mencari tantangan karier baru, saya aktif mengasah keterampilan teknis dan logika melalui proyek pengembangan web secara mandiri</p>
+                    </div>
+                    <div class="kegiatan-item">
+                        <div style="font-size: 12px; color: #7f8c8d;"><strong>📅 18-06-2026</strong></div>
+                        <h4 style="margin: 3px 0; color: #2c3e50;">Implementasi CRUD Modul Berita Sekolah</h4>
+                        <p style="margin: 5px 0 0 0; font-size: 13px; color: #555; text-align: justify;">Mengembangkan modul manajemen informasi berbasis PHP dan MySQL, menerapkan validasi string kaku untuk pengamanan retensi data teks area panjang.</p>
+                    </div>
+                    <div class="kegiatan-item">
+                        <div style="font-size: 12px; color: #7f8c8d;"><strong>📅 18-06-2026</strong></div>
+                        <h4 style="margin: 3px 0; color: #2c3e50;">Eksplorasi Fitur & Formula Microsoft Excel (Studi Kasus Laporan Penjualan Retail):</h4>
+                        <p style="margin: 5px 0 0 0; font-size: 13px; color: #555; text-align: justify;">Mempelajari fungsionalitas menu pada Tab Home serta mengimplementasikan rumus aritmatika dasar, manipulasi teks (UPPER, LOWER, PROPER, TRIM, CONCATENATE), fungsi logika (IF), serta pencarian data (VLOOKUP, HLOOKUP, XLOOKUP). Mengaplikasikan fungsi agregasi (SUM, AVERAGE, COUNT, COUNTA) dan fungsi bersyarat (SUMIF/S, AVERAGEIF/S, COUNTIF/S) dikombinasikan dengan Pivot Table untuk membangun sistem laporan harian konter, merekapitulasi data operasional, serta menganalisis pencapaian target penjualan produk secara presisi.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- Akhir main-column -->
+
+        <!-- ==================== KOLOM KANAN ==================== -->
+        <div class="side-column">
+            
+            <div class="card">
+                <h2>Keahlian</h2>
+                
+                <div class="skills-section">
+                    <h3>Hard Skills</h3>
+                    <div>
+                        <span class="badge">Inventory Control</span>
+                        <span class="badge">Stock Opname</span>
+                        <span class="badge">Rekonsiliasi Transaksi</span>
+                        <span class="badge">Administrasi Data</span>
+                        <span class="badge">Kearsipan Dokumen</span>
+                        <span class="badge">Microsoft Excel (Dasar)</span>
+                        <span class="badge">Microsoft Word</span>
+                        <span class="badge">POS Vanda Soft</span>
+                        <span class="badge">Canva</span>
+                    </div>
+                </div>
+
+                <div class="skills-section">
+                    <h3>Soft Skills</h3>
+                    <div>
+                        <span class="badge">Teliti</span>
+                        <span class="badge">Disiplin</span>
+                        <span class="badge">Kerja Sama Tim</span>
+                        <span class="badge">Komunikasi Efektif</span>
+                        <span class="badge">Pelayanan Pelanggan</span>
+                        <span class="badge">Pendengar Aktif</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Pendidikan</h2>
+                <h3 style="font-size: 15px; margin-bottom: 2px;">SMK Negeri 1 Kepanjen</h3>
+                <div style="font-size: 13px; color: #555;">Rekayasa Perangkat Lunak</div>
+                <div class="meta" style="margin-top: 2px;">Periode: 2019 - 2022</div>
+            </div>
+
+            <!-- SEKSI SERTIFIKASI (Sekarang Berada di Posisi Benar) -->
+            <div class="card">
+                <h2>Sertifikasi</h2>
+                <h3 style="font-size: 16px; margin-bottom: 2px; color: #2c3e50;">MySkill Short Class</h3>
+                <div style="font-size: 14px; font-weight: 600; color: #555; margin-bottom: 4px;">Microsoft Excel Basic Formula</div>
+                <div style="font-size: 12px; color: #7f8c8d; line-height: 1.4; margin-bottom: 8px; font-style: italic;">
+                    Diterbitkan oleh: Angga Fauzan CEO & Co-Founder MySkill | PT LINIMUDA INSPIRASI NEGERI
+                </div>
+                <div style="font-size: 13px; color: #333;">
+                    <strong>Diterbitkan pada:</strong> Mei 2026
+                </div>
+            </div>
+    <div class="card">
+                <h2>Dokumen Pendukung</h2>
+                <p style="font-size: 13px; color: #7f8c8d; margin-top: 0; margin-bottom: 12px;">
+                    Unduh hasil asesmen formal untuk validasi kompetensi dan kecocokan kerja:
+                </p>
+                
+                <!-- Tombol Hasil Tes Minat -->
+                <a href="Interest Test Result Alfin Shofiul Umam.pdf" download="Interest_Test_Result_Alfin_Shofiul_UMAM.pdf" 
+                   style="display: block; text-align: center; background: #e8f8f5; color: #16a085; text-decoration: none; padding: 10px; border-radius: 4px; font-weight: bold; font-size: 13px; margin-bottom: 10px; border: 1px solid #d1f2eb; transition: all 0.2s;">
+                    📊 Unduh Hasil Tes Minat Kerja (PDF)
+                </a>
+
+                <!-- Tombol Hasil Tes Gaya Komunikasi -->
+                <a href="Communication Style Test Result Alfin Shofiul Umam.pdf" download="Gaya_Komunikasi_Alfin_Shofiul_UMAM.pdf" 
+                   style="display: block; text-align: center; background: #e8f8f5; color: #16a085; text-decoration: none; padding: 10px; border-radius: 4px; font-weight: bold; font-size: 13px; border: 1px solid #d1f2eb; transition: all 0.2s;">
+                    🗣️ Unduh Hasil Tes Gaya Komunikasi (PDF)
+                </a>
+            </div>
+        </div> <!-- Akhir side-column -->
+
+    </div> <!-- Akhir f-layout -->
+
+</div> <!-- Akhir container -->
+
+<footer style="text-align: center; padding: 25px; color: #7f8c8d; font-size: 13px; background: #fff; border-top: 1px solid #eee; margin-top: 40px;">
+    &copy; 2026 Alfin Shofiul Umam. All Rights Reserved.
+</footer>
+
+</body>
+</html>
