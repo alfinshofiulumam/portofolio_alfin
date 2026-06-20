@@ -82,18 +82,23 @@
         }
 
         /* Gaya kotak Badge yang disesuaikan agar teks berada di tengah (Center) */
-        .badge { 
-            background: #e8f8f5; 
-            color: #16a085; 
-            padding: 8px 6px; /* Padding vertikal sedikit tebal agar proporsional */
-            border-radius: 4px; 
-            font-size: 11px; /* Ukuran font sedikit disesuaikan agar teks panjang tidak tumpah */
-            font-weight: bold; 
-            border: 1px solid #d1f2eb;
-            text-align: center; /* Membuat teks di dalam kotak rata tengah */
-            display: block; /* Memaksa kotak memenuhi 1 slot grid */
-            transition: all 0.2s ease;
-        }
+.badge { 
+    background: #e8f8f5; 
+    color: #16a085; 
+    padding: 8px 6px; /* Padding vertikal sedikit tebal agar proporsional */
+    border-radius: 4px; 
+    font-size: 11px; /* Ukuran font sedikit disesuaikan agar teks panjang tidak tumpah */
+    font-weight: bold; 
+    border: 1px solid #d1f2eb;
+    
+    /* GANTI BAGIAN DI BAWAH INI */
+    display: flex;            /* Mengubah menjadi flexbox */
+    justify-content: center;   /* Memaksa teks rata tengah secara horizontal */
+    align-items: center;       /* Memaksa teks rata tengah secara vertikal */
+    text-align: center;        /* Jaga-jaga jika teks terpaksa pecah dua baris di layar super kecil */
+    
+    transition: all 0.2s ease;
+}
 
         /* Efek interaktif saat kursor HRD menyentuh badge */
         .badge:hover {
@@ -220,8 +225,9 @@
             <!-- SEKSI SERTIFIKASI (Sekarang Berada di Posisi Benar) -->
             <div class="card">
                 <h2>Sertifikasi</h2>
-                <h3 style="font-size: 16px; margin-bottom: 2px; color: #2c3e50;">MySkill Short Class</h3>
+                <h3 style="font-size: 16px; margin-bottom: 2px; color: #2c3e50;">E-Certificate Microsoft Excel Basic Formula</h3>
                 <div style="font-size: 14px; font-weight: 600; color: #555; margin-bottom: 4px;">Microsoft Excel Basic Formula</div>
+                 <a href="https://docs.google.com/spreadsheets/d/1rJFV_fEZoeQpI8RZI5NhGBkRQxtZ7IpxtLryOTVcP2A/edit?gid=618481038#gid=618481038"><strong>Link Akses E-Certificate Saya</strong></a>
                 <div style="font-size: 12px; color: #7f8c8d; line-height: 1.4; margin-bottom: 8px; font-style: italic;">
                     Diterbitkan oleh: Angga Fauzan CEO & Co-Founder MySkill | PT LINIMUDA INSPIRASI NEGERI
                 </div>
